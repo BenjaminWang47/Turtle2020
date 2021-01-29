@@ -18,10 +18,12 @@ public class TurtleTest
     for (int i=0; i < 1000; i++)
     {
       turtleArray[i].turn(randNumGen.nextInt(360));
-      turtleArray[i].forward(100);
+      turtleArray[i].forward(randNumGen.nextInt(50));
     }
+    
     me.moveTo(200,200);
-    me.square(200);
+    me.square(50);
+    
     world.setVisible(true);
 
   }
