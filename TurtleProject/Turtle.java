@@ -1,6 +1,6 @@
 import java.util.*;
 import java.awt.*;
-//import bookClasses.*;
+import bookClasses.*;
 
 /**
  * Class that represents a turtle which is similar to a Logo turtle.
