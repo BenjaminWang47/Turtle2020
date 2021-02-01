@@ -6,6 +6,7 @@ import java.awt.font.*;
 import java.awt.geom.*;
 import java.util.Observer;
 import java.util.Random;
+import bookClasses.*;//Ben added
 
 /**
  * Class that represents a Logo-style turtle.  The turtle

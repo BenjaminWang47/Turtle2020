@@ -1,4 +1,5 @@
 import java.util.*;
+import bookClasses.*;//Ben added
 
 public class TurtleTest
 {
@@ -6,7 +7,7 @@ public class TurtleTest
   {
     Random randNumGen = new Random();
     World world = new World(false);
-    Turtle[] turtleArray = new Turtle[10];
+    Turtle[] turtleArray = new Turtle[100];
     for (int i=0; i < 100; i++)
       turtleArray[i] = new Turtle(world);
     

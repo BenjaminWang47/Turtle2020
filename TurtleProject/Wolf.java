@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.util.Random;
 import java.util.Iterator;
+import bookClasses.*;//Ben added
 
 /**
  * Class that represents a wolf.   The wolf class
