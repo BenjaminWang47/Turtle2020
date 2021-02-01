@@ -83,7 +83,7 @@ public class Turtle extends SimpleTurtle
       forward(side);
       turn(90);
       forward(side);
-      turn(90);
+      
 
 
   }
