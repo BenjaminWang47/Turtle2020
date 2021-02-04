@@ -59,33 +59,121 @@ public class Turtle extends SimpleTurtle
     super(p);
   }
 
-  /////////////////// methods ///////////////////////
+    /////////////////// methods ///////////////////////
 
 
-  public static void main(String[] args)
-  {
-    World earth = new World();
-    Turtle t1 = new Turtle(earth);
-    t1.forward();
-    t1.square(25);
-  }
-  /**
-   * Square - draw a square of n length
-   * @param side length
-   */
-
-  public void square(int side)
-  {
-      forward(side);
-      turn(90);
-      forward(side);
-      turn(90);
-      forward(side);
-      turn(90);
-      forward(side);
+    public static void main(String[] args)
+    {
+      World earth = new World();
+      Turtle t1 = new Turtle(earth);
+      /**/
+      t1.turn(-90);
+      t1.forward(200);
+      t1.turn(90);
+      t1.drawCircle(1200);
       
+      t1.forward(7);
+      t1.turn(30);
+      t1.drawHex(220);
+      
+      t1.turn(90);
+      t1.square(200);
+      
+      t1.turn(45);
+      t1.drawRec(100, 435);
+      
+      t1.turn(150);
+      t1.drawEquilateralTriangle(240);
+      
+      t1.randomWalk(100);
+      /**/
+    }
+    
+    /**
+     * drawsquare - draw a square of n length
+     * @param side length
+     */
 
-
-  }
+    public void square(int side)
+    {
+      forward(side);
+      turn(90);
+      forward(side);
+      turn(90);
+      forward(side);
+      turn(90);
+      forward(side);
+    }
+  
+    /**
+     * randomWalk - draws a specified length in a random direction
+     * @param int length
+     */
+    public void randomWalk (int length)
+    {
+        //random turn
+        turn((int)(Math.random() * 360 + 1));
+        forward(length);
+    }
+      
+    /**
+     * drawRec - draws a rectangle of height by width
+     * @param int height, int width
+     */
+    public void drawRec (int height, int width)
+    {
+        forward(height);
+        turn(90);
+        forward(width);
+        turn(90);
+        forward(height);
+        turn(90);
+        forward(width);
+    }
+      
+    /**
+     * drawEquilateraltriangle - makes an equilateral triangle with specified side length
+     * @param int side length
+     */
+    public void drawEquilateralTriangle (int length)
+    {
+        forward(length);
+        turn(120);
+        forward(length);
+        turn(120);
+        forward(length);
+    }
+      
+    /**
+     * drawHex - makes a hexagon with specified side length
+     * @param int side length
+     */
+    public void drawHex (int length)
+    {
+        forward(length);
+        turn(60);
+        forward(length);
+        turn(60);
+        forward(length);
+        turn(60);
+        forward(length);
+        turn(60);
+        forward(length);
+        turn(60);
+        forward(length);
+    }
+      
+    /**
+     * drawCircle - makes a circle with specified
+     * @param int radius
+     */
+    public void drawCircle (int radius)
+    {
+        for (int i = 0; i < 72; i++)
+        {
+            forward((int)(Math.PI * radius) / 180);//(int)(Math.PI * radius) / 180
+            turn(5.0);
+        }
+    }
 
 } // this } is the end of class Turtle, put all new methods before this

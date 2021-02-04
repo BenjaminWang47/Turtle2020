@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=TurtleLab
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ TurtleLab\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=length
+comment2.target=void\ randomWalk(int)
+comment2.text=\r\n\ randomWalk\ -\ draws\ a\ specified\ length\ in\ a\ random\ direction\r\n\ @param\ int\ length\r\n
+comment3.params=height\ width
+comment3.target=void\ drawRec(int,\ int)
+comment3.text=\r\n\ drawRec\ -\ draws\ a\ rectangle\ of\ height\ by\ width\r\n\ @param\ int\ height,\ int\ width\r\n
+comment4.params=length
+comment4.target=void\ drawEquilateralTriangle(int)
+comment4.text=\r\n\ drawEquilateraltriangle\ -\ makes\ an\ equilateral\ triangle\ with\ specified\ side\ length\r\n\ @param\ int\ side\ length\r\n
+comment5.params=length
+comment5.target=void\ drawHex(int)
+comment5.text=\r\n\ drawHex\ -\ makes\ a\ hexagon\ with\ specified\ side\ length\r\n\ @param\ int\ side\ length\r\n
+comment6.params=
+comment6.target=void\ drawCircle()
+comment6.text=\r\n\ drawCircle\ -\ makes\ a\ circle\ with\ specified\r\n\ @param\ int\ radius\r\n
+numComments=7
